@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="ColorCell" customModule="ColorPalette_CollectionView" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="111" height="95"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="111" height="95"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dUi-SX-hjf">
+                        <rect key="frame" x="20.5" y="5" width="70" height="70"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="70" id="cD7-qg-Ggh"/>
+                            <constraint firstAttribute="height" constant="70" id="kkd-LY-kAb"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0r2-cm-p3D">
+                        <rect key="frame" x="0.0" y="80" width="111" height="10"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="10" id="Ts7-hc-TKx"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="0r2-cm-p3D" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="2Se-zp-7cZ"/>
+                <constraint firstItem="dUi-SX-hjf" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="gsx-tR-oxe"/>
+                <constraint firstItem="0r2-cm-p3D" firstAttribute="top" secondItem="dUi-SX-hjf" secondAttribute="bottom" constant="5" id="jJE-3E-195"/>
+                <constraint firstItem="dUi-SX-hjf" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="5" id="luN-FJ-VbT"/>
+                <constraint firstAttribute="trailing" secondItem="0r2-cm-p3D" secondAttribute="trailing" id="rRa-pq-ELM"/>
+            </constraints>
+            <size key="customSize" width="111" height="95"/>
+            <connections>
+                <outlet property="colorTitle" destination="0r2-cm-p3D" id="2lo-cC-BUX"/>
+                <outlet property="colorView" destination="dUi-SX-hjf" id="0or-Td-3Uf"/>
+            </connections>
+            <point key="canvasLocation" x="128.2608695652174" y="84.709821428571431"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
